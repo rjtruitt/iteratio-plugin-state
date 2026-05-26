@@ -1,0 +1,36 @@
+{
+  "name": "iteratio-plugin-state",
+  "version": "0.1.0",
+  "description": "State management plugin for iteratio",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "keywords": [
+    "iteratio",
+    "iteratio-plugin",
+    "state",
+    "checkpointing"
+  ],
+  "author": "Rob Truitt",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rjtruitt/iteratio-plugin-state.git"
+  },
+  "peerDependencies": {
+    "iteratio": "^0.1.0"
+  },
+  "devDependencies": {
+    "typescript": "^6.0.3",
+    "vitest": "^4.1.6"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "prepublishOnly": "npm run build",
+    "test": "vitest run"
+  }
+}
